@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>소리바다</title>
     <link href="css/reset.css" rel="stylesheet">
+    <link href="css/swiper_js.css" rel="stylesheet">
+    <link href="css/swiper-bundle.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/> -->
     <link href="css/main.css" rel="stylesheet">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <!--:: #wrap-->
@@ -27,74 +33,76 @@
                 <a href="#" class="playlist hidden">chilling playlist</a>
                 <a href="#" class="play_btn hidden">play now</a>
             </section>
-
-            <section class="con1">
+            
+            <div class="swiper01 mySwiper01 con1 section">
                 <h2 class="con_t">최신음악</h2>
                 <a href="#" class="more">더보기</a>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="img/con1_01.jpg" alt="최신음악">
-                            <h3>strawberry moon</h3>
-                            <p>아이유(IU)</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="img/con1_02.jpg" alt="최신음악">
-                            <h3>연모 OST Part.2</h3>
-                            <p>린</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="img/con1_03.jpg" alt="최신음악">
-                            <h3>PROTOTYPE RESEARCH #0063</h3>
-                            <p>김승민</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="img/con1_04.jpg" alt="최신음악">
-                            <h3>비가 와</h3>
-                            <p>SIM2</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="img/con1_05.jpg" alt="최신음악">
-                            <h3>엑시트</h3>
-                            <p>Liquor(리쿼),Deepin(디핀)</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="img/con1_06.jpg" alt="최신음악">
-                            <h3>홍천기 OST Part.7</h3>
-                            <p>아이유(IU)</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="img/con1_07.jpg" alt="최신음악">
-                            <h3>나의 첫사랑</h3>
-                            <p>다비치</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="img/con1_08.jpg" alt="최신음악">
-                            <h3>Love&Fall</h3>
-                            <p>버블 시스터즈</p>
-                        </a>
-                    </li>
-                </ul>
-            </section>
 
-            <section class="con2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/con1_01.jpg" alt="최신음악">
+                        <h3>strawberry moon</h3>
+                        <p>아이유(IU)</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/con1_02.jpg" alt="최신음악">
+                        <h3>연모 OST Part.2</h3>
+                        <p>린</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/con1_03.jpg" alt="최신음악">
+                        <h3>PROTOTYPE RESEARCH #0063</h3>
+                        <p>김승민</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/con1_04.jpg" alt="최신음악">
+                        <h3>비가 와</h3>
+                        <p>SIM2</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/con1_05.jpg" alt="최신음악">
+                        <h3>엑시트</h3>
+                        <p>Liquor(리쿼),Deepin(디핀)</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/con1_06.jpg" alt="최신음악">
+                        <h3>홍천기 OST Part.7</h3>
+                        <p>아이유(IU)</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/con1_07.jpg" alt="최신음악">
+                        <h3>나의 첫사랑</h3>
+                        <p>다비치</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/con1_08.jpg" alt="최신음악">
+                        <h3>Love&Fall</h3>
+                        <p>버블 시스터즈</p>
+                    </a>
+                  </div>
+              </div>
+            </div>
+
+              <div class="swiper02 mySwiper02 con2 section">
                 <h2 class="con_t">인기차트</h2>
                 <a href="#" class="more">더보기</a>
-                <div class="rankbox clear">
+                <div class="swiper-wrapper rankbox">
+                  <div class="swiper-slide">
                     <ul class="rank_box rankbox_1">
                         <li class="clear">
                             <a href="#">
@@ -153,6 +161,8 @@
                             <button type="button" class="play hidden">재생</button>
                         </li>
                     </ul>
+                  </div>
+                  <div class="swiper-slide">
                     <ul class="rank_box rankbox_2">
                         <li class="clear">
                             <a href="#">
@@ -211,6 +221,8 @@
                             <button type="button" class="play hidden">재생</button>
                         </li>
                     </ul>
+                  </div>
+                  <div class="swiper-slide">
                     <ul class="rank_box rankbox_3">
                         <li class="clear">
                             <a href="#">
@@ -269,62 +281,65 @@
                             <button type="button" class="play hidden">재생</button>
                         </li>
                     </ul>
-                </div>
-            </section>
 
-            <section class="con3">
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper03 mySwiper03 con3 section">
                 <h2 class="con_t">뮤직비디오</h2>
                 <a href="#" class="more">더보기</a>
-                <ul class="MV MV_01">
-                    <li>
-                        <a href="https://www.youtube.com/watch?v=sqgxcCjD04s&feature=emb_imp_woyt">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/sqgxcCjD04s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <h3>strawberry moon</h3>
-                            <p>아이유(IU)</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/watch?v=EtiPbWzUY9o">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/EtiPbWzUY9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <h3>낙하(NAKKA) (with IU)</h3>
-                            <p>AKMU</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/watch?v=Crenv7QCC14&feature=emb_imp_woyt">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Crenv7QCC14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <h3>이별을 걷다</h3>
-                            <p>황치열</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/watch?v=q2O9YCFeAJA">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/q2O9YCFeAJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <h3>싹둑(Love Cut))</h3>
-                            <p>CNBLUE</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/watch?v=JirYow6J6MY">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/JirYow6J6MY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <h3>RED SUN(With 롯뱃)</h3>
-                            <p>브레이브걸스</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/watch?v=oO3GUUzGuK8">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/oO3GUUzGuK8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <h3>The Juice</h3>
-                            <p>Sam Kim(샘김) </p>
-                        </a>
-                    </li>
-                </ul>
-            </section>
+                <div class="swiper-wrapper MV">
+                  <div class="swiper-slide">
+                    <a href="https://www.youtube.com/watch?v=sqgxcCjD04s&feature=emb_imp_woyt">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/sqgxcCjD04s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h3>strawberry moon</h3>
+                        <p>아이유(IU)</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="https://www.youtube.com/watch?v=EtiPbWzUY9o">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/EtiPbWzUY9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h3>낙하(NAKKA) (with IU)</h3>
+                        <p>AKMU</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="https://www.youtube.com/watch?v=Crenv7QCC14&feature=emb_imp_woyt">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Crenv7QCC14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h3>이별을 걷다</h3>
+                        <p>황치열</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="https://www.youtube.com/watch?v=q2O9YCFeAJA">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/q2O9YCFeAJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h3>싹둑(Love Cut))</h3>
+                        <p>CNBLUE</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="https://www.youtube.com/watch?v=JirYow6J6MY">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JirYow6J6MY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h3>RED SUN(With 롯뱃)</h3>
+                        <p>브레이브걸스</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="https://www.youtube.com/watch?v=oO3GUUzGuK8">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/oO3GUUzGuK8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h3>The Juice</h3>
+                        <p>Sam Kim(샘김) </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
 
-            <section class="con4">
+              <div class="swiper04 mySwiper04 con4 section">
                 <h2 class="con_t">소리메거진</h2>
                 <p class="more">더보기</p>
-                <div class="news_box">
+                <div class="swiper-wrapper news_box">
+                  <div class="swiper-slide">
                     <ul class="news news_01">
                         <li>
                             <a href="https://music.bugs.co.kr/musicpost/EUSTVS7WJJY6J45BV41F" class="clear">
@@ -345,6 +360,8 @@
                             </a>
                         </li>
                     </ul>
+                  </div>
+                  <div class="swiper-slide">
                     <ul class="news news_02">
                         <li>
                             <a href="https://music.bugs.co.kr/musicpost/8QAGR8FQNG03NKTLVPMJ" class="clear">
@@ -365,6 +382,8 @@
                             </a>
                         </li>
                     </ul>
+                  </div>
+                  <div class="swiper-slide">
                     <ul class="news news_03">
                         <li>
                             <a href="https://music.bugs.co.kr/musicpost/IKD7XYVL5L82IY3HH2IS" class="clear">
@@ -385,8 +404,9 @@
                             </a>
                         </li>
                     </ul>
+                  </div>
                 </div>
-            </section>
+              </div>
 
             <section class="con5">
                 <div><img src="img/con5_Event_01.jpg" alt="이벤트1"></div>
@@ -397,10 +417,12 @@
                 </div>
             </section>
 
-            <section class="con6">
+
+            <div class="swiper06 mySwiper06 con6 section">
                 <h2 class="con_t">바다 Moment</h2>
                 <a href="#" class="more">더보기</a>
-                <div class="moment">
+                <div class="swiper-wrapper moment">
+                  <div class="swiper-slide">
                     <ul class="line line01">
                         <li>
                             <a href="#">
@@ -417,6 +439,8 @@
                             </a>
                         </li>
                     </ul>
+                  </div>
+                  <div class="swiper-slide">
                     <ul class="line line02">
                         <li>
                             <a href="#">
@@ -433,6 +457,9 @@
                             </a>
                         </li>
                     </ul>
+
+                  </div>
+                  <div class="swiper-slide">
                     <ul class="line line03">
                         <li>
                             <a href="#">
@@ -449,6 +476,9 @@
                             </a>
                         </li>
                     </ul>
+
+                  </div>
+                  <div class="swiper-slide">
                     <ul class="line line04">
                         <li>
                             <a href="#">
@@ -465,8 +495,10 @@
                             </a>
                         </li>
                     </ul>
+
+                  </div>
                 </div>
-            </section>
+              </div>
 
         </div>
         <!--// contents-->
