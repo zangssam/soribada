@@ -10,7 +10,7 @@ $(document).ready(function(){
   });
   var swiper02 = new Swiper(".mySwiper02", {});
   var swiper03 = new Swiper(".mySwiper03", {
-    slidesPerView: 1.1,
+    slidesPerView: 1,
     spaceBetween: 10
   });
   var swiper04 = new Swiper(".mySwiper04", {});
